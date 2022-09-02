@@ -1,5 +1,54 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  table(style="width:100%", border="0")
+    tr
+      th 
+        img(id="rounded-fade" src="images/20220809_124750_cropped.png", alt="", width="250")
+        h1= title
+        h2 Software Engineer
+    tr
+      td 
+        p I make games!
+      
+    tr
+      td
+        h1 Games
+        p Definitely not tetris, in tetris you can't make your own pieces
+        iframe(
+          id="video"
+          width="560" 
+          height="315" 
+          src="https://www.youtube.com/embed/CWHOE-dI4_c" 
+          title="YouTube video player" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
+          )
+    tr
+      td
+        p Final year university project. I tried to make Minecraft Survival Mode and settled for Minecraft Deathmatch
+        iframe(
+          id="video"
+          width="560" 
+          height="315" 
+          src="https://www.youtube.com/embed/TWsGAxlwdzY" 
+          title="YouTube video player" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
+          )
+    tr
+      td 
+        h1 Work Experience
+    tr
+      td
+        h2| #[a(href="https://www.waam3d.com/") WAAM3D] Software Engineer
+        p Currently working on the newly released WAAMControl print path visualisation software. Previously improved academic level path planning and slicing software with multiple printing dimension capability. Working closely with members of Cranfield University to deliver requirements for multiple overseas and domestic aerospace and general manufacturing clients. Working on and improving robot arm simulator, an interactive real time software experience designed to reduce lead times of WAAM deposition.
+    tr
+      td
+        h2| #[a(href="https://www.corethree.net/") Corethree] Software Developer
+        p Worked with a high concurrency, high throughput, real time system undergoing architectural and process change over the course of its always online service. In charge of anonymisation of user data as per the arrival of GDPR regulation. Developed "on your feet" solutions for a quick-to-market product lineup as quick as they were reliable
+    tr
+      td
+        h2| #[a(href="https://www.arrowgrass.com/") Arrowgrass] Software Developer Intern
+        p Maintained up to date program data for in-house devops systems. Filled out client feature requests for our in house PnL viewing software. Implemented automated database archive and retrieval software responsible for the displacement of big data in response times of no more than a second
+    tr
+      td
+        p Mustafa Fadel 2022
